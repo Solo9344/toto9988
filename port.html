@@ -1,0 +1,218 @@
+  <!DOCTYPE html>
+  <html lang="ja" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>MY Portfolio</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+      <link href="port.css"rel="stylesheet">
+
+      <style>
+
+        body{
+          padding:0;
+          margin:0;
+          font-family:Verdana,sans-serif;
+          position:absolute;
+
+          background-image: url(背景２.jpg);
+          background-repeat:no-repeat;
+          background-position:center center;
+          background-attachment:fixed;
+          background-size:cover;
+
+          top:0;
+          left:0;
+          color:#333;
+          padding:8px;
+          box-sizing:border-box;
+          width:100%;
+          height:100%;
+          overflow-x:hidden;
+        }
+
+        #cover{
+          background:#000;
+          opacity:0.6;
+          width:100%;
+          height:100%;
+          position:absolute;
+          top:0;
+          left:0;
+          z-index:1;
+          display:none;
+        }
+
+        #menu{
+          z-index:2;
+          position:absolute;
+          top:0;
+          right:-180px;
+          color:white;
+
+          background-image: url(背景.jpg);
+
+          padding:8px;
+          box-sizing:border-box;
+          width:180px;
+          min-height:100%;
+          transition:.4s;
+          text-decoration: none;
+          font-family: 'Meiryo UI','HanziPen SC','Kaiti TC',sans-serif;
+          list-style: none;
+          font-size:30px;
+        }
+
+        #show,#hide{
+          float:right;
+          cursor:pointer;
+        }
+
+        body.menu-open{
+          overflow-y:hidden;
+        }
+        body.menu-open #cover{
+          display:block;
+        }
+        body.menu-open #menu{
+          right:0;
+        }
+
+      </style>
+
+    </head>
+    <body id="nakami">
+
+      <i class="fa fa-bars" id="show"></i>
+
+      <div class="container">
+
+        <!-- ホーム画面 -->
+      <section class="area" id="saisho">
+
+      <h1>MY Portfolio</h1>
+      <div id="icon">
+      <img src="アイコン.png">
+    </div>
+
+      </section>
+
+
+      <!-- about -->
+      <section class="area" id="homegamen">
+      <h2>About</h2>
+      <img src="漫画.jpg" alt="プロフ画像">
+      <p>すべての道は、私につながる。<br>柴幸男の戯曲「あゆみ」のセリフです。学生劇団に所属していた際、
+        本戯曲を公演で使用しました。以来、このセリフは私の人生訓になっています。<br>どんな出来事も無駄
+        ではない。映画制作、漫画・イラスト執筆、現職で培った交渉力。その全てが、今後の私のキャリアに活き
+        ていく、活かして見せる、と考えています。<br>本サイトはそんな私が今まで歩んできた「すべての道」の
+        なかから抜粋し掲載させていただきました。</p>
+      </section>
+
+      <!-- ギャラリー -->
+      <section class="area" id="garaly">
+        <h2>illustration</h2>
+        <p>過去にブログ掲載用に描いたイラスト集です。</p>
+
+        <br>
+
+        <div class="container2">
+        <main>
+          <img>
+        </main>
+
+        <nav>
+          <ul>
+            <li id="play">Play</li>
+            <li id="pause" class="hidden">Pause</li>
+            <li id="prev">&lt;</li>
+            <li id="next">&gt;</li>
+          </ul>
+        </nav>
+
+          <ul class="thumnails"></ul>
+      </div>
+
+      <div id="tobu">
+      <img src="飛ぶ.png">
+      </div>
+
+      <script src="port.js"></script>
+
+      </section>
+
+      <div id="cover"></div>
+
+      <div id="menu">
+        <i class="fa fa-times" id="hide"></i>
+        <ul　id="btn">
+          <li><a href="#saisho">Home</a></li>
+          <li><a href="#homegamen">About</a></li>
+          <li><a href="#garaly">illust</a></li>
+          <li><a href="#sonohoka">まち歩き</a></li>
+        </ul>
+      </div>
+
+      <script>
+        (function(){
+          `use strict`;
+
+          var show = document.getElementById(`show`);
+          var hide = document.getElementById(`hide`);
+
+          show.addEventListener(`click`,function(){
+            document.body.className = 'menu-open';
+        });
+
+        hide.addEventListener(`click`,function(){
+          document.body.className = '';
+      });
+
+         })();
+
+      </script>
+
+      <section class="area" id="sonohoka">
+        <h2>まち歩き企画</h2>
+        <p>現職の「高槻まち歩き」イベントにて動画・パンフ類のデザインを担った際の制作物です。</p>
+
+      <div id="panf">
+        <h3>パンフ　一部抜粋（Adobeを使用したデザイン）</h3>
+
+        <ul>
+          <li>
+            <img src="パンフ.jpeg">
+          </li>
+          <li>
+            <img src="パンフ３.jpg">
+          </li>
+          <li>
+            <img src="パンフ４.jpeg">
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="パンフ２.jpeg">
+          </li>
+          <li>
+            <img src="パンフ６.jpeg">
+          </li>
+          <li>
+            <img src="パンフ５.jpeg">
+          </li>
+        </ul>
+
+      </div>
+
+      <div>
+        <h3>利き酒クイズ　ヒント動画(撮影・編集・構成)</h3>
+        <div class="iframe-wrapper">
+          <iframe width="400" height="250" src="利き酒企画.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      </section>
+
+    </body>
+  </html>
