@@ -1,0 +1,355 @@
+#nakami h1{
+  font-size:80px;
+  text-align: center;
+  text-shadow:#000 1px 1px 0;
+  color:#ffffff;
+  font-family: 'Meiryo UI','HanziPen SC',sans-serif;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.area {
+  height: 100vh;
+}
+
+#garaly{
+  height: 105vh;}
+
+#menu li a{
+  text-decoration: none;
+　color: white;
+  list-style-type: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#menu li a:hover{
+  color:red;
+}
+
+#show{
+  font-size: 30px;
+}
+
+/* ホーム画面 */
+
+#view_clock{
+  margin-top: 20px;
+  font-size:20px;
+  color:#663300;
+  font-family: 'Meiryo UI','HanziPen SC',sans-serif;
+}
+
+#icon{
+ text-align:center;
+}
+
+#saisho img{
+  width:400px;
+  height: 400px;
+}
+
+
+/* About */
+
+h2{
+  font-size:60px;
+  top:10px;
+  text-shadow:#000 1px 1px 0;
+  color:#663300;
+  font-family: 'Meiryo UI','HanziPen SC',sans-serif;
+  margin-bottom: 8px;
+}
+
+#homegamen{
+  height: 130vh;}
+}
+
+#homegamen p{
+  font-size: 17px;
+}
+
+#homegamen{
+  clear:both;
+  background-image: url(背景３.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover;
+  padding:0 30px;
+  border-radius: 30px;
+}
+
+#homegamen img{
+  width:400px;
+  margin:auto;
+}
+
+
+#garaly{
+  clear:both;
+  background-color: #ffffff;
+  padding:0 30px;
+  border-radius: 30px;
+}
+
+#garaly p{
+  margin-bottom:-10px;
+}
+
+#tobu img{
+  float:right;
+  width:0%;
+  margin-top: -200px;
+}
+
+.container2{
+  width:300px;
+  margin:0;
+}
+
+.container2 img{
+  width:400px;
+  border-radius: 20px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+main{
+  margin-bottom: 8px;
+}
+
+main img{
+  width:auto;
+  height:auto;
+  vertical-align: bottom;
+}
+
+nav{
+    margin-bottom: 8px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li{
+  width:60px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav li:hover{
+  background: #f8f8f8;
+}
+
+#play,#pause{
+  width: 140px;
+}
+
+.thumnails{
+  display: grid;
+  grid-template-columns: repeat(6,56px);
+  gap:5px;
+}
+
+.thumnails li{
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.thumnails li:hover{
+  opacity: 1;
+}
+
+.thumnails li.current{
+  opacity: 1;
+}
+
+.thumnails img{
+  width:56px;
+  vertical-align: bottom;
+}
+
+.hidden{
+  display: none;
+}
+
+/* まち歩き　*/
+
+#sonohoka h2{
+  font-size:60px;
+  top:10px;
+  text-shadow:#000 2px 5px 0;
+  color:#ffffff;
+  font-family: 'Meiryo UI','HanziPen SC',sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+
+#sonohoka h3{
+  color: #000;
+ -webkit-text-stroke: 0.4px #FFF;
+ text-stroke: 1px #FFF;
+ text-align: center;
+}
+
+#sonohoka p{
+  text-align: left;
+}
+
+  #sonohoka > h1{
+    text-align: center;
+    padding: 64px;
+    font-weight: normal;
+  }
+
+  #sonohoka ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sonohoka img{
+    width:90%;
+    border-radius: 20px;
+  }
+
+  #sonohoka li{
+    padding-bottom: 64px;
+  }
+
+.iframe-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.iframe-wrapper {
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+}
+
+footer{
+  padding: 64px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+}
+
+@media(min-width: 900px){
+
+#saisho{
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#saisho h1{
+  font-size: 70px;
+  margin:auto;
+}
+
+#saisho img{
+  width: 80%;
+  height:70%;
+  margin-top:100px;
+  margin-left: 150px;
+}
+
+#homegamen{
+  height: 100vh;}
+
+#homegamen p{
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+#homegamen img{
+  margin-top: -75px;
+  width:38%;
+  float: right;
+  border-radius: 20px;
+}
+
+/*　まち歩き　*/
+
+#sonohoka > p{
+  text-align: center;
+}
+
+#sonohoka ul{
+  width:auto;
+  margin:0;
+  display: flex;
+}
+
+#sonohoka li{
+  width: auto;
+}
+
+#sonohoka img{
+  border-radius: 20px;
+}
+
+  .container2{
+    width:300px;
+    margin:0;
+  }
+
+  .container2 img{
+    width:500px;
+    border-radius: 20px;
+    float:left;
+  }
+
+  .container2 nav ul{
+    float: right;
+  }
+
+  .thumnails{
+    display: grid;
+    grid-template-columns: repeat(4,56px);
+    gap:28px;
+  }
+
+  .thumnails img{
+    width:76px;
+    vertical-align: bottom;
+  }
+
+  .iframe-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+  }
+
+}
+
+  @media(min-width: 1000px){
+  #tobu img{
+    float:right;
+    width:40%;
+    margin-top: -250px;
+  }
