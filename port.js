@@ -6,7 +6,7 @@
     '02.jpg',
     '03.jpg',
     '04.jpg',
-    '05.jpg',
+    'https://github.com/Solo9344/toto9988/blob/master/05.jpg?raw=true',
     '06.png',
     '07.jpg',
     '08.jpg',
